@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta data invisible to the users goes here -->
+        <title>Lab 2: Journal Entries</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="res/favicon.png">
+    </head>
+
+    <body>
+        <!-- Contents of page (visible to users) goes here-->
+
+        <!-- Header used for navigation to various journal entries -->
+        <header>
+            <!-- Thinking there might be a way to customize the user name in the future... -->
+            <h1>CSE 110 - Lab 2 : <span id="user">Akar</span>'s Journal Entries!</h1>
+
+            <!-- Journal entries table would have it's own styling in a seperate CSS file but this lab doesn't use those! -->
+            <div id="entry_table">JOURNAL ENTRIES LIST</div>
+            <nav>
+                <ul>
+                    <li><a href="#Day_0">4/8/21</a></li>
+                    <li><a href="#Day_1">4/9/21</a></li>
+                    <li><a href="#Day_2">4/10/21</a></li>
+                    <li><a href="#Day_N">Add Entry</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <section id="Day_0">
+                <h2>Thursday - April 8, 2021</h2>
+                <h4>Highs and Lows</h4>
+                <ul>
+                    <li>YouTube recommended's 'small woof' video was a nice highlight</li>
+                    <li>Finding out there's a lab 12hrs before the due date was <em>NOT</em> fun</li>
+                </ul>
+                <h4>TODO</h4>
+                <ol>
+                    <li><input type="checkbox" checked/>Watch Friday lectures</li>
+                    <li><input type="checkbox" checked/>Do reading quizzes due Friday</li>
+                    <li><input type="checkbox" checked/>Meet with group for <b class="coursename">CSE105</b> hw</li>
+                    <li><input type="checkbox" checked/>Work on <b class="coursename">ECE65</b> Lab 1</li>
+                </ol>
+                <h4>Journal Entry</h4>
+                <p>
+                    During office hours for <b class="coursename">Phys2C</b>, the TA announced that the answer sheet
+                    for problem 8 did actually forget to account for a small calculation that I brought up earlier in
+                    the week - nice to know my reasoning was sound.
+                </p>
+                <p>
+                    Thank god my old roommate asked me how far I was into the first lab for <b class="coursename">ECE65</b>.
+                    If he hadn't I feel like I might've forgotten that labs were given out at the frequency of hws and hw
+                    assignments were as rare as labs in other classes <i> (maybe might've even forgotten to the lab completely) </i>
+                </p>
+                <p>
+                    Also, here's the cool video I found as I browsed through YouTube recommendeds at night:
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Rr-ra5Sobk" title="Youtuve video player">
+                </iframe>
+            </section>
+            
+            <hr>
+
+            <section id="Day_1">
+                <h2>Friday - April 9, 2021</h2>
+                <h4>Highs and Lows</h4>
+                <ul>
+                    <li>Read the chapter 139 of Shingeki No Kyojin</li>
+                    <li>Misread instructions and had to redo half of <b class="coursename">ECE65</b> lab</li>
+                    <li>Prince Philip died</li>
+                </ul>
+                <h4>TODO</h4>
+                <ol>
+                    <li><input type="checkbox" checked/>Finish <b class="coursename">ECE65</b> Lab 1</li>
+                    <li><input type="checkbox" checked/>Do the laundry, along with bedsheets and blankets</li>
+                    <li><input type="checkbox" checked/>Start <b class="coursename">CSE110</b> Lab 2</li>
+                </ol>
+                <h4>Journal Entry</h4>
+                <p>
+                <!-- Started working on a few scripts to automate the process of getting tokens to work with the spotify API -->
+                <!-- Also can add that you read it while listening to the anime's 2nd season opening:
+                    <iframe src="https://open.spotify.com/embed/track/7nV7Ly23BxipT6msqg1Dqg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     -->
+                    Found out the last chapter of SNK got released. I was expecting the ending to be a timeloop 
+                    because of the reference to the memory from the first chapter in chapter 138 but I guess that's 
+                    just the ability to see the future. Actually that still doesn't make sense since he had that 
+                    vision/dream when he was still a kid, way before he inherited the titan...  
+                </p>
+                <p>
+                    Fixed an old script that worked with Riot's API. A part of the data you got from a match 
+                    was timestamp in unix Epoch ms that I was having issues correctly converting it to a date/time.
+                    Figured out today that it was UTC based time and had to be converted to PST in addition to
+                    adding ms since Jan 1, 1970. Also the reason I went back to fix it in the first place was because 
+                    this meme I saw today reminded me about it: 
+                </p>
+                <img src="res/Epoch_meme.jpg" alt="Epoch meme"/>
+            </section>
+            
+            <hr>
+
+            <section id="Day_2">
+                <h2>Saturday - April 10, 2021</h2>
+                <h4>Highs and Lows</h4>
+                <!-- Add highlight talking about a cover of the town theme from a video game I used to play, 
+                    in turn led me another orchestral cover: insert both audio clips -->
+                <ul>
+                    <li>Found a nice cover of the town theme from an old game I played!</li>
+                    <li>Spent way longer than I wanted working on <b class="coursename">CSE105</b> hw...</li>
+                    <li>Managed to put together a script to generate tokens to work with Spotify's web API</li>
+                </ul>
+                <h4>TODO</h4>
+                <ol>
+                    <li><input type="checkbox" checked/>Make and eat a breakfast burrito</li>
+                    <li><input type="checkbox" checked/>Vaccuum around the house</li>
+                    <li><input type="checkbox" checked/>Dust shelves, desk, piano, etc.</li>
+                    <li><input type="checkbox" checked/><strong>Finish <b class="coursename">CSE110</b> Lab 2</strong></li>
+                    <li><input type="checkbox" checked/>Meet with group to finish <b class="coursename">CSE105</b> hw</li>
+                </ol>
+                <h4>Journal Entry</h4>
+                <p>
+                    That breakfast burrito was pretty good. I wanna try making my own hash browns next time though, I heard 
+                    homemade is better than the frozen ones you buy from the supermarket.
+                <!-- Finalized a script full of functions to source, allowing for playback control, and some user info -->
+                <!-- Youtube randomly recommended me a shining force 2 town theme sax cover. Eventually found another 
+                orchestral cover that was also pretty good. -->
+                </p>
+                <p>
+                    I think I'm finally starting to get powershell - at least this time I didn't have 7 tabs opened up to figure 
+                    out how to get different stuff done. And being able to dot source a script to use it's functions has got to be 
+                    one of the most useful things I've found learning powershell.
+                </p>
+                <p>
+                    Oh and YouTube recommendeds worked it's magic again. That sax cover of the town theme from Shining Force II 
+                    made me really wanna play it again, but the beginning of a new quarter is defitely not the best time to start a 
+                    new playthrough. Looking for the original theme I also found another cover - orchestral this time that also 
+                    sounded really nice. Here's both of them:
+                </p>
+                <h5>SFII - Welcome To Our Town (Sax)</h5>
+                <audio controls>
+                    <source src="res/ShiningForce2-WelcomeToOurTown(coverbyAmigoigasax).mp3" type="audio/mpeg">
+                    Something went wrong with the audio :/
+                </audio>
+                <h5>SFII - Welcome To Our Town (Orchestral)</h5>
+                <audio controls>
+                    <source src="res/ShiningForceII~WelcomeToOurTown(orchestralarr).mp3" type="audio/mpeg">
+                    Something went wrong with the audio :/
+                </audio>
+            </section>
+        </main>
+
+        <hr>
+
+        <!-- Footer containing a 'new entry' form for adding to the Journal -->
+        <footer id="Day_N">
+            <h2>Add a new journal entry here</h2>
+            <details>
+                <summary>Instructions: Add a journal entry by filling in all components for an entry</summary>
+                Enter a valid date (will be converted to 'Day of the Week' - 'Month Day, Year' format in entry) <br>
+                Add a coma seperated series of points you'd like in the 'Highs and Lows' section <br>
+                Add a coma seperated series of items you'd like to add to the 'TODO' section <br>
+                Finally write a paragraph entry to elaborate on the points in the other sections
+                as well as any additional thoughts you'd like to jot down in the journal entry section
+            </details>
+
+            <form action="#" method="POST" class="new_entry">
+                <fieldset>
+                    <legend>New Entry Details</legend>
+
+                    <div class="new_entry">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="entry_date"/>
+                    </div>
+
+                    <div class="new_entry">
+                        <label for="highs_and_lows">Highs and Lows:</label>
+                        <input type="text" id="highs_and_lows" name="entry_h&l" />
+                    </div>
+
+                    <div class="new_entry">
+                        <label for="todo">TODO:</label>
+                        <input type="text" id="todo" name="entry_todo"/>
+                    </div>
+
+                    <div class="new_entry">
+                        <label for="entry">Journal Entry:</label>
+                        <textarea id="entry" name="entry_text"></textarea>
+                    </div>
+
+                    <div class="new_entry">
+                        <p>Choose multimedia to attach (if any):</p>
+
+                        <input type="radio" id="image" name="multimedia_type" value="image">
+                        <label for="image">Image</label>
+
+                        <input type="radio" id="audio" name="multimedia_type" value="audio">
+                        <label for="audio">Audio</label>
+
+                        <input type="radio" id="video" name="multimedia_type" value="video">
+                        <label for="video">Video</label>
+                    </div>
+
+                    <hr>
+
+                    <p><i>More inputs for the form that don't have anything to do with journal entries follow...</i></p>
+
+                    <div class="new_entry">
+                        <label for="fav_flavor">Choose your favorite flavor:</label>
+                        <input list="flavors" id="fav_flavor" name="entry_flavor">
+
+                        <datalist id="flavors">
+                            <option value="Plain flavor">
+                            <option value="Mint flavor">
+                            <option value="Strawberry flavor">
+                            <option value="Banana flavor">
+                            <option value="Peanut flavor">
+                        </datalist>
+                    </div>
+
+                    <div class="new_entry">
+                        <label for="fav_thing">Choose your favorite thing:</label>
+
+                        <select id="fav_thing" name="entry_thing">
+                            <option value="Rockin">Rockin</option>
+                            <option value="Hammer">Hammer</option>
+                            <option value="Love">Love</option>
+                            <option value="Gifts">Gifts</option>
+                            <option value="Slime">Slime</option>
+                            <option value="Gaming">Gaming</option>
+                            <option value="Boxing">Boxing</option>
+                        </select>
+                    </div>
+
+                    <div class="new_entry">
+                        <input type="submit" value="Create Entry!">
+                    </div>
+                </fieldset>
+            </form>
+        </footer>
+    </body>
+</html>
