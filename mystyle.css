@@ -1,0 +1,176 @@
+/* Earthbound font found online labeled as 'free for personal use'
+ * - courtesy of Jayde Garrow
+ */
+
+@font-face {
+    font-family: 'earthboundregular';
+    src: url('fonts/earthbound-webfont.woff2') format('woff2'),
+         url('fonts/earthbound-webfont.woff') format('woff');
+    font-weight: normal;
+}
+
+/* Colorscheme draws inspiration from a fan-made palette based off Earthbound:
+ *
+ * #EAE2D7
+ * #CCBEB5
+ * #AC917C
+ * #9E534E
+ * #6D910D
+ *
+ * Plus colors I found by using the colorpicker in MS paint (screenshot of the 
+ * earthbound title)
+ *
+ * #EF783F
+ * #A6509C
+ */
+
+/* General padding for the page for a cleaner look */
+body {
+    padding: 0pt 10pt 10pt 10pt;
+}
+
+/* Earthbound font styled title :D 
+ * background gradient + transparent text trick used to apply color
+ * */
+h1 {
+    font-family: 'earthboundregular', seriff;
+    font-size: 5em;
+    letter-spacing: 5px;
+    line-height: 1em;
+    margin: 0px;
+
+    background: linear-gradient(0deg, #EF783F, #A6509C);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    display: inline;
+}
+
+/* General paragraph indentation seems nice too */
+p {
+    text-indent: 2em;
+}
+
+/* Centering the 2 versions of SF2 covers 
+ * 2 spans under a div (with audio id), using flexbox
+ *
+ * First checks if there is enough screen estate to put the audio side to side
+ */
+@media (min-width: 700px){
+    #audio {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+
+    /* Only used to label the audio covers above */
+    h5 {
+        text-align: center;
+    }
+}
+
+/* All sections starting with 'Day_' represent a journal entry
+ * Since Day_N (which represents a new journal entry) id is assigned to a footer
+ * these settings won't apply to it and will be set seperately
+ */
+section[id^="Day_"] {
+    border-style: double;
+    border-color: #9E534E;          /* red-brown -> old; green -> new */ 
+    border-width: 2px;
+    border-radius: 25px;
+
+    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Seperate Box model for the new journal entry */
+#Day_N {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* Base styling for the summary/details box */
+summary,
+details {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    line-height: 1.2em;
+}
+
+/* highlight summary box and slightly nudge right to indicate use can click */
+summary:hover,
+summary:active {
+    background: #CCBEB5;
+    margin-left: 5px;
+}
+
+/* similar highlighting for hover/clicking on links */
+a:hover,
+a:active {
+    color: #A6509C;
+    margin-left: 5px;
+}
+
+/* Formatting for fieldset and legend */
+fieldset {
+    display: block;
+    positin: static;
+    max-width: 600px;
+
+    border-style: double;
+    border-color: #6D910D;          /* red-brown -> old; green -> new */
+    border-width: 2px;
+    border-radius: 25px;
+}
+
+legend {
+    border-style: double;
+    border-color: #6D910D;
+    border-width: 2px;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+/* Formatting new entry form with grid display */
+.new_entry {
+    display: grid;
+    position: relative;
+    min-width: 450px;
+    grid-template-columns: 180px auto;
+    column-gap: 10px;
+    justify-items: stretch;
+}
+
+div ~ div.button_entry {
+    margin-top: 15px;
+    text-align: center;
+}
+
+fieldset > div {
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+div.multi_entry {
+    text-align: center;
+}
+
+* nav li:hover {
+    background: #CCBEB5;
+}
+
+li + li {
+    margin-bottom: 2px;
+}

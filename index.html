@@ -6,6 +6,12 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="res/favicon.png">
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            body{
+                background: #EAE2D7
+            }
+        </style>
     </head>
 
     <body>
@@ -19,7 +25,7 @@
             <!-- Journal entries table would have it's own styling in a seperate CSS file but this lab doesn't use those! -->
             <div id="entry_table">JOURNAL ENTRIES LIST</div>
             <nav>
-                <ul>
+                <ul class = "entry_table">
                     <li><a href="#Day_0">4/8/21</a></li>
                     <li><a href="#Day_1">4/9/21</a></li>
                     <li><a href="#Day_2">4/10/21</a></li>
@@ -47,22 +53,22 @@
                 </ol>
                 <h4>Journal Entry</h4>
                 <p>
-                    During office hours for <b class="coursename">Phys2C</b>, the TA announced that the answer sheet
-                    for problem 8 did actually forget to account for a small calculation that I brought up earlier in
-                    the week - nice to know my reasoning was sound.
+                During office hours for <b class="coursename">Phys2C</b>, the TA announced that the answer sheet
+                for problem 8 did actually forget to account for a small calculation that I brought up earlier in
+                the week - nice to know my reasoning was sound.
                 </p>
                 <p>
-                    Thank god my old roommate asked me how far I was into the first lab for <b class="coursename">ECE65</b>.
-                    If he hadn't I feel like I might've forgotten that labs were given out at the frequency of hws and hw
-                    assignments were as rare as labs in other classes <i> (maybe might've even forgotten to the lab completely) </i>
+                Thank god my old roommate asked me how far I was into the first lab for <b class="coursename">ECE65</b>.
+                If he hadn't I feel like I might've forgotten that labs were given out at the frequency of hws and hw
+                assignments were as rare as labs in other classes <i> (maybe might've even forgotten to the lab completely) </i>
                 </p>
                 <p>
-                    Also, here's the cool video I found as I browsed through YouTube recommendeds at night:
+                Also, here's the cool video I found as I browsed through YouTube recommendeds at night:
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4Rr-ra5Sobk" title="Youtuve video player">
+                <iframe style="min-width: 50vw; min-height: 50vh; margin-left: 30px" src="https://www.youtube.com/embed/4Rr-ra5Sobk" title="Youtuve video player">
                 </iframe>
             </section>
-            
+
             <hr>
 
             <section id="Day_1">
@@ -81,21 +87,21 @@
                 </ol>
                 <h4>Journal Entry</h4>
                 <p>
-                    Found out the last chapter of SNK got released. I was expecting the ending to be a timeloop 
-                    because of the reference to the memory from the first chapter in chapter 138 but I guess that's 
-                    just the ability to see the future. Actually that still doesn't make sense since he had that 
-                    vision/dream when he was still a kid, way before he inherited the titan...  
+                Found out the last chapter of SNK got released. I was expecting the ending to be a timeloop 
+                because of the reference to the memory from the first chapter in chapter 138 but I guess that's 
+                just the ability to see the future. Actually that still doesn't make sense since he had that 
+                vision/dream when he was still a kid, way before he inherited the titan...  
                 </p>
                 <p>
-                    Fixed an old script that worked with Riot's API. A part of the data you got from a match 
-                    was timestamp in unix Epoch ms that I was having issues correctly converting it to a date/time.
-                    Figured out today that it was UTC based time and had to be converted to PST in addition to
-                    adding ms since Jan 1, 1970. Also the reason I went back to fix it in the first place was because 
-                    this meme I saw today reminded me about it: 
+                Fixed an old script that worked with Riot's API. A part of the data you got from a match 
+                was timestamp in unix Epoch ms that I was having issues correctly converting it to a date/time.
+                Figured out today that it was UTC based time and had to be converted to PST in addition to
+                adding ms since Jan 1, 1970. Also the reason I went back to fix it in the first place was because 
+                this meme I saw today reminded me about it: 
                 </p>
-                <img src="res/Epoch_meme.jpg" alt="Epoch meme"/>
+                <img style="width: 30vw; margin-left: 30px" src="res/Epoch_meme.jpg" alt="Epoch meme"/>
             </section>
-            
+
             <hr>
 
             <section id="Day_2">
@@ -116,30 +122,36 @@
                 </ol>
                 <h4>Journal Entry</h4>
                 <p>
-                    That breakfast burrito was pretty good. I wanna try making my own hash browns next time though, I heard 
-                    homemade is better than the frozen ones you buy from the supermarket.
+                That breakfast burrito was pretty good. I wanna try making my own hash browns next time though, I heard 
+                homemade is better than the frozen ones you buy from the supermarket.
                 </p>
                 <p>
-                    I think I'm finally starting to get powershell - at least this time I didn't have 7 tabs opened up to figure 
-                    out how to get different stuff done. And being able to dot source a script to use it's functions has got to be 
-                    one of the most useful things I've found learning powershell.
+                I think I'm finally starting to get powershell - at least this time I didn't have 7 tabs opened up to figure 
+                out how to get different stuff done. And being able to dot source a script to use it's functions has got to be 
+                one of the most useful things I've found learning powershell.
                 </p>
                 <p>
-                    Oh and YouTube recommendeds worked it's magic again. That sax cover of the town theme from Shining Force II 
-                    made me really wanna play it again, but the beginning of a new quarter is defitely not the best time to start a 
-                    new playthrough. Looking for the original theme I also found another cover - orchestral this time that also 
-                    sounded really nice. Here's both of them:
+                Oh and YouTube recommendeds worked it's magic again. That sax cover of the town theme from Shining Force II 
+                made me really wanna play it again, but the beginning of a new quarter is defitely not the best time to start a 
+                new playthrough. Looking for the original theme I also found another cover - orchestral this time that also 
+                sounded really nice. Here's both of them:
                 </p>
-                <h5>SFII - Welcome To Our Town (Sax)</h5>
-                <audio controls>
-                    <source src="res/ShiningForce2-WelcomeToOurTown(coverbyAmigoigasax).mp3" type="audio/mpeg">
-                    Something went wrong with the audio :/
-                </audio>
-                <h5>SFII - Welcome To Our Town (Orchestral)</h5>
-                <audio controls>
-                    <source src="res/ShiningForceII~WelcomeToOurTown(orchestralarr).mp3" type="audio/mpeg">
-                    Something went wrong with the audio :/
-                </audio>
+                <span id="audio">
+                    <div>
+                        <h5>SFII - Welcome To Our Town (Sax)</h5>
+                        <audio controls>
+                            <source src="res/ShiningForce2-WelcomeToOurTown(coverbyAmigoigasax).mp3" type="audio/mpeg">
+                            Something went wrong with the audio :/
+                        </audio>
+                    </div>
+                    <div>
+                        <h5>SFII - Welcome To Our Town (Orchestral)</h5>
+                        <audio controls>
+                            <source src="res/ShiningForceII~WelcomeToOurTown(orchestralarr).mp3" type="audio/mpeg">
+                            Something went wrong with the audio :/
+                        </audio>
+                    </div>
+                </span id="audio">
             </section>
         </main>
 
@@ -157,7 +169,7 @@
                 as well as any additional thoughts you'd like to jot down in the journal entry section
             </details>
 
-            <form action="#" method="POST" class="new_entry">
+            <form action="#" method="POST">
                 <fieldset>
                     <legend>New Entry Details</legend>
 
@@ -181,8 +193,8 @@
                         <textarea id="entry" name="entry_text"></textarea>
                     </div>
 
-                    <div class="new_entry">
-                        <p>Choose multimedia to attach (if any):</p>
+                    <div class="multi_entry">
+                        Choose multimedia to attach (if any):<br>
 
                         <input type="radio" id="image" name="multimedia_type" value="image">
                         <label for="image">Image</label>
@@ -196,7 +208,7 @@
 
                     <hr>
 
-                    <p><i>More inputs for the form that don't have anything to do with journal entries follow...</i></p>
+                    <i>More inputs for the form that don't have anything to do with journal entries follow...</i>
 
                     <div class="new_entry">
                         <label for="fav_flavor">Choose your favorite flavor:</label>
@@ -225,7 +237,7 @@
                         </select>
                     </div>
 
-                    <div class="new_entry">
+                    <div class="button_entry">
                         <input type="submit" value="Create Entry!">
                     </div>
                 </fieldset>
