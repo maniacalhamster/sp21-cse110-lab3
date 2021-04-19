@@ -38,6 +38,7 @@ h1 {
     letter-spacing: 5px;
     line-height: 1em;
     margin: 0px;
+    padding: 5px;
 
     background: linear-gradient(0deg, #EF783F, #A6509C);
     background-clip: text;
@@ -173,4 +174,8 @@ div.multi_entry {
 
 li + li {
     margin-bottom: 2px;
+}
+
+section > h2 {
+    text-align: center;
 }
